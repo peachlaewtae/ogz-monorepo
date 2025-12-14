@@ -5,11 +5,20 @@ Open-source client-server implementation of GunZ: The Duel.
 
 ## Repository Structure
 
-| Directory     | Contents                                           |
-| ------------- | -------------------------------------------------- |
-| `ogz-source/` | C++ source code (client, server, common libraries) |
-| `ogz-server/` | Server binaries and configuration files            |
-| `ogz-client/` | Client assets (maps, models, sounds)               |
+Open GunZ (OGZ) is a GunZ: The Duel client-server implementation split into three directories:
+
+| Directory       | Contents                                                                           |
+| --------------- | ---------------------------------------------------------------------------------- |
+| **ogz-source/** | C++14 source code - see `ogz-source/CLAUDE.md` for build commands and architecture |
+| **ogz-server/** | Server binaries (MatchServer) and XML configuration files                          |
+| **ogz-client/** | Client assets: maps, models, sounds, interface resources                           |
+
+## Platform Support
+
+| Component       | Windows       | Linux/Docker    | macOS          |
+| --------------- | ------------- | --------------- | -------------- |
+| **MatchServer** | Native (.exe) | Native / Docker | Docker or Wine |
+| **GunZ Client** | Native        | Wine            | Wine/CrossOver |
 
 ## Quick Start (Docker)
 
